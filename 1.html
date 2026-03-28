@@ -1,0 +1,179 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const obj=JSON.parse('{"name":"xyz","age":17,"dob":"2026-03-10"}')
+        console.log(obj.dob)
+        obj=new Date(obj.dob)
+        console.log(obj)
+        document.getElementById("demo").innerHTML=obj
+
+    </script>
+</head>
+<body>
+    <p id="demo"></p>
+    <button onclick="call()">click me</button>
+</body>
+</html> -->
+<!-- write a json object which contains array of 3 object each object containts 2 property a 
+ name and a age. now sort array value by age in decending order print name and age in terminal
+ as per shorter age -->
+
+ <!-- display content on browser after 5 s  -->
+
+
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <p id="p1"></p>
+    <script>
+        setTimeout(function(){
+            document.getElementById("p1").innerHTML="lj"
+        },5000)
+    </script>
+ </body>
+ </html> -->
+
+ <!-- initialize variable and increament both each time display sum interval 1s -->
+
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <p id="p1"></p>
+    <button onclick="stop()">stop</button>
+    <script>
+        let a=2,b=5;
+        a1=setInterval(function(){
+            document.getElementById("p1").innerHTML=++a + ++b;
+        },1000)
+        function stop(){
+            clearInterval(a1)
+        }
+    </script>
+ </body>
+ </html> -->
+
+
+
+ <!-- //wrirte a code to increase font size in 1s and it should stop increasing when font size reach 50px. this 
+ //task should be perform  when click browser button default 15px -->
+<!-- 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+ <body>
+     <p id="p1">Hello</p>
+     <button onclick="startIncrease()">Increase Font</button>
+     <button onclick="stopIncrease()">Stop</button>
+     <script>
+         let fontSize = 15;
+         let intervalId = null;
+         
+         function updateFontSize() {
+             document.getElementById("p1").style.fontSize = fontSize + "px";
+         }
+         
+         function startIncrease() {
+             if (intervalId !== null) {
+                 return;
+             }
+             updateFontSize();
+             intervalId = setInterval(function() {
+                 if (fontSize < 50) {
+                     fontSize++;
+                     updateFontSize();
+                 } else {
+                     clearInterval(intervalId);
+                     intervalId = null;
+                 }
+             }, 1000);
+         }
+         
+         function stopIncrease() {
+             if (intervalId !== null) {
+                 clearInterval(intervalId);
+                 intervalId = null;
+             }
+         }
+     </script>
+ </body>
+ </html> -->
+
+
+<!-- 3 button increase font 2.stop increasing when f size reachesd 200px or click.3.decrese for decrese
+ after click stop or  decrsing when 20px   1s and default size is 50px -->
+
+
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+ <body>
+     <p id ="p1">Hello</p>
+     <button onclick="fun()">increase</button>
+     <button onclick="fun1()">decrease</button>
+     <button onclick="fun2()">stop</button>
+     <script>
+         let f=50;
+         function fun(){
+             x=setInterval(function(){
+                 if(f<200){
+                     fu(f++)
+                 }
+             },1000)
+         }
+         function fu(s){
+             document.getElementById("p1").style.fontSize=s+"px"
+         }
+         function fun1(){
+             x=setInterval(function(){
+                 if(f>20){
+                     fu(f--)
+                 }
+             })
+         }
+         function fun2(){
+             clearInterval(x)
+         }
+     </script>
+ </body>
+ </html> -->
+
+
+ <!-- write js program using events module 
+  1when connection event occures,print connection succ and trigger a data received event when data received event
+  occures,print data received succ 
+  finaly print thanks at the end of the execution  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hiii</h1>
+</body>
+</html>
